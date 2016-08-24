@@ -3,26 +3,50 @@
 	AP:  Attack Power
 	cAP: Counter Attack Power
 */
-obiWan {
-	HP:;
-	AP:;
-	cAP:;
-}
+var obiWan = {
+	HP: 50,
+	AP:50,
+	cAP: 50,
+	attack: function() {
+		this.AP += this.AP;
+	}
+};
 
-darthVader {
-	HP:;
-	AP:;
-	cAP:;	
-}
+var darthVader = {
+	HP: 50,
+	AP: 50,
+	cAP: 50,
+	attack: function() {
+		this.AP += this.AP;
+	}	
+};
 
-lukeSkywalker {
-	HP:;
-	AP:;
-	cAP:;	
-}
+var lukeSkywalker = {
+	HP: 50,
+	AP: 50,
+	cAP: 50,
+	attack: function() {
+		this.AP += this.AP;
+	}
+};
 
-chewbacca {
-	HP:;
-	AP:;
-	cAP:;		
-}
+var chewbacca = {
+	HP: 50,
+	AP: 50,
+	cAP: 50,
+	attack: function() {
+		this.AP += this.AP;
+	}
+};
+
+var bool = true;
+$(document).ready(function() {
+	if(bool) {
+		$(".char").on("click", function() {
+			var picked = $(this).appendTo(".ally");
+			bool = false;
+			$(".selection .char").appendTo(".enemies");
+		});
+	}
+
+});
