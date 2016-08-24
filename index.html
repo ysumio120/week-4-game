@@ -3,44 +3,51 @@
 <head>
 	<title>Star Wars RPG</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container">
-		<div class="row selection">
+		<div class="row selection text-center">
 			<!-- <div class="col-lg-12 col-centered"> -->
-				<div class="col-lg-3 players">	
-					<div class="char obiWan">
-						<img src="http://placehold.it/150x150">
-						<p></p>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 char">
+					<div class="obiWan">
+						<img src="assets/images/Ben_Kenobi.png">
+						<p>Obi-Wan Kenobi</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="char darthVader">
-						<img src="http://placehold.it/150x150">
-						<p></p>
+				<div class="col-lg-3 col-md-3 col-sm-12 char">
+					<div class="darthVader">
+						<img src="assets/images/darthvader.jpg">
+						<p>Darth Vader</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="char lukeSkywalker">
-						<img src="http://placehold.it/150x150">
-						<p></p>
+				<div class="col-lg-3 col-md-3 col-sm-12 char">
+					<div class="hanSolo">
+						<img src="assets/images/Hansoloprofile.jpg">
+						<p>Han Solo</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="char chewbacca">
-						<img src="http://placehold.it/150x150">
-						<p></p>
+				<div class="col-lg-3 col-md-3 col-sm-12 char">
+					<div class="chewbacca">
+						<img src="assets/images/Chewbacca.png">
+						<p>Chewbacca</p>
 					</div>
 				</div>
 			<!-- </div> -->
 		</div>
-		<div class="row">
-			<div class="col-lg-3 ally">
+		<div class="row enemies">
+			<div class="col-lg-4 col-md-4 col-sm-4"></div>
+		</div>
+		<div class="row battlefield text-center">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ally">
+			<h2>YOU</h2>
 			</div>
-			<div class="col-lg-9 enemies">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 opponent">
+			<h2>OPPONENT</h2>
 			</div>
+			
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
