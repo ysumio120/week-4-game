@@ -1,12 +1,28 @@
-.opponent div {
-	display: inline-block;
+body {
+	background-color: black;
 }
-
 img {
 	height: 200px;
 	width: 200px;
 }
 
-/*p {
-	text-align: center;
-}*/
+.ally,
+.opponent {
+	display: none;
+}
+
+.progress {
+	position: relative;
+}
+
+.progress span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	color: black;
+	font-size: 15px;
+}
+
+.selection div img:hover {
+	border: 2px solid white;
+}
