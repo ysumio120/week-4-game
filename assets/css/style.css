@@ -1,14 +1,59 @@
-body {
-	background-color: black;
+html {
+	height: 100%;
+	margin: 0;
+    padding: 0;
 }
+
+body {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+}
+
 img {
 	height: 200px;
 	width: 200px;
 }
 
+.logo img {
+	height: 50%;
+	width: 50%;
+}
+
+h2, h3, p {
+	color: white;
+}
+
+.instructions p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.instructions p,
+.action p {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.tint {
+	background-color: red;
+	display: inline-block;
+}
+
+.tint img {
+	opacity: .8;
+}
+
 .ally,
-.opponent {
+.opponent,
+.vs p {
 	display: none;
+}
+
+.vs {
+	font-size: 20px;
+	margin-top: 190px;
 }
 
 .progress {
@@ -25,4 +70,16 @@ img {
 
 .selection div img:hover {
 	border: 2px solid white;
+}
+
+.action button {
+	display: none;
+}
+
+.ally .playing img {
+	border: 2px solid green;
+}
+
+.opponent .playing img {
+	border: 2px solid red;
 }

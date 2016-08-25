@@ -9,61 +9,91 @@
 </head>
 <body>
 	<div class="container">
+		<!-- Logo -->
+		<div class="row logo text-center">
+			<img src="assets/images/logo.png">
+		</div>
+
+		<!-- Row of characters to select from (your character and opponents) -->
 		<div class="row selection text-center">
-			<!-- <div class="col-lg-12 col-centered"> -->
+				
+				<!-- Obi-Wan Kenobi -->
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 char">
-					<div id="obiWan">
-						<img src="assets/images/Ben_Kenobi.png">
+					<div id="obiWan" data-clickable="true">
+						<span class=""><img src="assets/images/Ben_Kenobi.png"></span>
 						<p>Obi-Wan Kenobi</p>
 					</div>
 				</div>
+
+				<!-- Darth Vader -->
 				<div class="col-lg-3 col-md-3 col-sm-12 char">
-					<div id="darthVader">
-						<img src="assets/images/darthvader.jpg">
+					<div id="darthVader" data-clickable="true">
+						<span><img src="assets/images/darthvader.jpg"></span>
 						<p>Darth Vader</p>
 					</div>
 				</div>
+
+				<!-- Han Solo -->
 				<div class="col-lg-3 col-md-3 col-sm-12 char">
-					<div id="hanSolo">
-						<img src="assets/images/Hansoloprofile.jpg">
+					<div id="hanSolo" data-clickable="true">
+						<span><img src="assets/images/Hansoloprofile.jpg"></span>
 						<p>Han Solo</p>
 					</div>
 				</div>
+
+				<!-- Chewbacca -->
 				<div class="col-lg-3 col-md-3 col-sm-12 char">
-					<div id="chewbacca">
-						<img src="assets/images/Chewbacca.png">
+					<div id="chewbacca" data-clickable="true">
+						<span><img src="assets/images/Chewbacca.png"></span>
 						<p>Chewbacca</p>
 					</div>
 				</div>
-			<!-- </div> -->
 		</div>
+
+		<!-- Instructions -->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 text-center">
-				<div class="instructions">Select one of the above as your character</div>
+				<div class="instructions"><p>Select one of the above as your character</p></div>
 			</div>
 		</div>
+
+		<!-- Battlefield where your character and one opponent will fight -->
 		<div class="row battlefield text-center">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ally">
+			
+			<!-- Ally health bar and picture -->
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 ally">
 				<h2>YOU</h2>
 				<div class="progress">
 					<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="" style="">
 					<span></span>
 					</div>
 				</div>
-				<p>TEST</p>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 opponent">
+
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 vs">
+				<p>VS</p>
+			</div>
+
+			<!-- Opponent health bar and image -->
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 opponent">
 				<h2>OPPONENT</h2>
 				<div class="progress">
 					<div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="" style="">
 					</div>
 					<span></span>
 				</div>
-				<p>TEST</p>
 			</div>
 		</div>
-		<div class="row action text-center"></div>
+
+		<!-- Buttons to attack and restart game -->
+		<!-- Displays results and damage dealt to each character after each attack -->
+		<div class="row action text-center">
+			<button class='btn btn-default btn-lg attack'>Attack</button>
+			<button class='btn btn-default btn-lg reset'>Reset</button>
+			<p></p>
+		</div>
 	</div>
+	
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
